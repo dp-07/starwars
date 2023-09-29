@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Star Wars API</h1>
+    </div>
+    <div class="tabs">
+        <div class="tab active" id="peopleTab">People</div>
+        <div class="tab" id="filmsTab">Films</div>
+    </div>
+    <div class="content">
+        <div class="list-container" id="listContainer">
+            <!-- people or fil, data list will be added here dynamically using js after fetching the data -->
+        </div>
+        <div class="detail-container" id="detailContainer">
+            <!-- Details will be displayed here for film or people data accordingly using js -->
+            <h2>Details</h2>
+            <p><strong>Name/Title:</strong> <span id="detailName"></span></p>
+            <p><strong>Description/Opening Crawl:</strong></p>
+            <p><span id="detailDescription"></span></p>
+            <p><strong>Created On:</strong> <span id="detailCreated"></span></p>
+            <button class="back-button" id="backButton">Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
